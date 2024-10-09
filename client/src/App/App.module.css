@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100vw;
+}
+
+.pageContent {
+  width: 100vw;
+  height: 90vh;
+  scrollbar-width: none;
+  overflow: scroll; /* Hide scrollbars */
+  position: relative; /* Ensure proper stacking context */
+}

@@ -1,0 +1,17 @@
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .tableContainer {
+    font-size: 12px;
+  }
+}

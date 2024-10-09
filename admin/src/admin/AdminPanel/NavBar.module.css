@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #282c34;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  height: 10vh;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px; /* Slightly larger logo for better visibility */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Subtle zoom-in effect on hover */
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  gap: 40px; /* Increases gap for better spacing */
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px; /* Slightly larger for readability */
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.navLinks li a:hover {
+  color: #00bcd4;
+  background-color: rgba(
+    0,
+    188,
+    212,
+    0.2
+  ); /* Slightly more pronounced hover effect */
+}

@@ -1,0 +1,100 @@
+/* Updated Carousel Styles */
+.homeCarouselContainer {
+  height: 500px; /* Larger carousel height */
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carouselImage {
+  object-fit: cover; /* Ensure image covers the area */
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff; /* White background for cards */
+  position: relative; /* Positioning context for absolute button */
+  min-height: 220px; /* Set a minimum height for the cards */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Subtle lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+
+/* Button Styles */
+.cardButton {
+  background-color: #4caf50 !important; /* Green background color */
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute !important; /* Absolute positioning */
+  bottom: 20px !important; /* Align to bottom */
+  right: 20px !important; /* Align to right */
+}
+
+.cardButton:hover {
+  background-color: #388e3c !important; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* General Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .homeCarouselContainer {
+    height: 300px;
+  }
+
+  .card {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}

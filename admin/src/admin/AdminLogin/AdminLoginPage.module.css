@@ -1,0 +1,91 @@
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.paper {
+  padding: 40px 30px; /* Adjusted padding for better spacing */
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between the fields and button */
+}
+
+.inputField {
+  padding: 10px; /* Added padding for better input field spacing */
+}
+
+.button {
+  padding: 12px;
+  background: linear-gradient(45deg, #007bff, #0056d2);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  animation: buttonBounce 0.7s ease-in-out;
+}
+
+@keyframes buttonBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #0056d2, #007bff);
+}
+
+.typography {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #007bff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  animation: textPopIn 0.5s ease-in;
+}
+
+@keyframes textPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
